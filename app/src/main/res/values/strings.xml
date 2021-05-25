@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Call App</string>
+    <string name="call">Call</string>
+    <string name="missCall">Miss. Calls</string>
+    <string name="sendSMS">Send SMS</string>
+    <string name="readSMS">Read SMS</string>
+    <string name="backButton">Back</string>
+    <string name="dialNumber">Please Dial Number</string>
+
+    <style name="MyTextView">
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <string name="sendSMSFragment">Hello from fragment</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutCallApp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4.0"
+        android:id="@+id/CallApp"
+        android:theme="@style/MyTextView">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_weight="1.0"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:insetLeft="7dp"
+            android:insetTop="7dp"
+            android:insetRight="7dp"
+            android:insetBottom="7dp"
+            android:onClick="@string/dialNumber"
+            android:outlineProvider="paddedBounds"
+            android:requiresFadingEdge="horizontal|vertical"
+            android:rotation="0"
+            android:rotationX="0"
+            android:text="@string/call"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/missCall"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:insetLeft="7dp"
+            android:insetTop="7dp"
+            android:insetRight="7dp"
+            android:insetBottom="7dp"
+            android:text="@string/missCall"
+            android:textColor="@android:color/white" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/sendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:insetLeft="7dp"
+        android:insetTop="7dp"
+        android:insetRight="7dp"
+        android:insetBottom="7dp"
+        android:text="@string/sendSMS"
+        android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/readSMS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:insetLeft="7dp"
+            android:insetTop="7dp"
+            android:insetRight="7dp"
+            android:insetBottom="7dp"
+            android:text="@string/readSMS"
+            android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
