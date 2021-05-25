@@ -39,7 +39,9 @@ class MainActivity : AppCompatActivity() {
         val missCall = findViewById<Button>(R.id.missCall)
         missCall.setOnClickListener{
             Log.d(TAG, "Clicked on Miss Call")
+
             val intent = Intent(this, ThirdActivity::class.java)
+            intent.putExtras(getIntent().extras!!)
             startActivity(intent)
         }
 

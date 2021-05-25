@@ -15,12 +15,12 @@ class ThirdActivity : AppCompatActivity(){
 
         Log.d(TAG, "Inside Third Activity")
         txtString = findViewById(R.id.missCallAlert)
-        Log.d(TAG, "After find View By Id")
+
         var msg = StringBuilder("Miss call from - ")
         var b = intent.extras
-        Log.d(TAG, "After Intent.extras")
+
         var missCallPhoneNumber = b?.getString("PhoneNumber", "911111111")
-        Log.d(TAG, "After get the phone number")
+
         msg.append(missCallPhoneNumber)
         txtString?.setText(msg)
     }
